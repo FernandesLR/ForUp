@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" href="for.png" />
+</head>
+<body>
+    <!-- Header/Nav -->
+     <header>
+         <nav>
+             <div class="nav-logo">
+                 <span>ForUp</span>
+             </div>
+             <div class="nav-links">
+                 <a href="#">METODOLOGIA</a>
+                 <a href="#">CURSOS</a>
+                 <a href="#">DESCONTOS</a>
+                 <a href="#">AULA EXPERIMENTAL</a>
+             </div>
+             <div class="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+         </nav>
+     </header>
+
+
+     <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Insira seus dados</h2>
+            
+            <label for="text">Seu e-mail</label>
+            <input type="email" placeholder="Seu e-mail" id="email"><br><br>
+            <label for="text">Seu nome</label>
+            <input type="name" placeholder="Seu nome" id="nome"><br><br>
+            <label for="text">Seu telefone</label>
+            <input type="tel" placeholder="Ex: (11)9875642" id="telefone"><br><br>
+            <button id="botaoEnviar" onclick="enviarDados()">Enviar</button>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-main">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn">
+                            <span>🇺🇸</span>
+                            <span>Inglês</span>
+                        </button >
+                    </div>
+
+                    <h1 class="hero-title">                        
+                        Sua jornada rumo à fluência começa agora, com um <span>método único e flexível</span>
+                    </h1>
+                    <p class="hero-text">
+                        Aprenda no seu ritmo com aulas que se encaixam na sua rotina e objetivos, garantindo resultados rápidos e eficazes.
+                    </p>
+                    <button class="cta-btn">
+                        AGENDE SUA AULA GRATUITA
+                    </button>
+                    <div class="whatsApp">
+                        <a href="https://wa.me/11976939246" target="_blank">Fale com um de Nossos Atendentes</a>
+                    </div>
+
+                </div>
+                <div class="hero-image">
+                    <img 
+                        src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                        alt="Student"
+                    >
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Aulas particulares e ao vivo</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Certificado de conclusão</h3>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Material de apoio gratuito</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Efficient Learning Section -->
+    <section class="efficient-learning">
+        <div class="efficient-learning-container">
+            <h2 class="section-title">
+                <span>O jeito mais eficiente</span> de aprender
+            </h2>
+            <p class="section-text">
+                Nós entendemos suas necessidades e personalizamos o ensino para você permitindo que você <span>aprenda o idioma de forma natural e intuitiva.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <div class="courses-container">
+            <h2 class="courses-title">Nossos Cursos</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Inglês Básico</h3>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>3 meses</span>
+                    </div>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>24 aulas</span>
+                    </div>
+                    <ul class="course-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Gramática fundamental</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Vocabulário essencial</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Conversação básica</span>
+                        </li>
+                    </ul>
+                    <p class="course-price">R$ 95.90/mensal</p>
+                    <button class="course-btn">Matricular</button>
+                </div>
+                <div class="course-card">
+                    <h3>Inglês Intermediário</h3>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>4 meses</span>
+                    </div>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>32 aulas</span>
+                    </div>
+                    <ul class="course-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Gramática avançada</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Expressões idiomáticas</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Fluência conversacional</span>
+                        </li>
+                    </ul>
+                    <p class="course-price">R$ 120/mensal</p>
+                    <button class="course-btn">Matricular</button>
+                </div>
+                <div class="course-card">
+                    <h3>Inglês Avançado</h3>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>6 meses</span>
+                    </div>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>48 aulas</span>
+                    </div>
+                    <ul class="course-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Preparação TOEFL/IELTS</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Business English</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Fluência nativa</span>
+                        </li>
+                    </ul>
+                    <p class="course-price">R$ 150/mensal</p>
+                    <button class="course-btn">Matricular</button>
+                </div>
+                <!--Programação-->
+                <div class="course-card">
+                    <h3>Programação</h3>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>6 meses</span>
+                    </div>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>48 aulas</span>
+                    </div>
+                    <ul class="course-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>HTML e CSS</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Padrões de desenvolvimento</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>JavaScript e TypeScript</span>
+                        </li>
+                    </ul>
+                    <p class="course-price">R$ 150/mensal</p>
+                    <button class="course-btn">Matricular</button>
+                </div>
+
+                <div class="course-card">
+                    <h3>Informática</h3>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>6 meses</span>
+                    </div>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>48 aulas</span>
+                    </div>
+                    <ul class="course-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Preparação TOEFL/IELTS</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Business English</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Fluência nativa</span>
+                        </li>
+                    </ul>
+                    <p class="course-price">R$ 150/mensal</p>
+                    <button class="course-btn">Matricular</button>
+                </div>
+
+
+                
+                <div class="course-card">
+                    <h3>Python - Ciência de dados e IA</h3>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span>9 meses</span>
+                    </div>
+                    <div class="course-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span>50 aulas</span>
+                    </div>
+                    <ul class="course-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Automações com Python</span>
+                        </li>
+
+                    </ul>
+                    <p class="course-price">R$ 150/mensal</p>
+                    <button class="course-btn">Matricular</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience">
+        <div class="audience-container">
+            <h2 class="audience-title">Para Quem é Este Curso?</h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="audience-content">
+                        <h3>Profissionais Ocupados</h3>
+                        <p>
+                            Ideal para quem precisa aprender inglês para avançar na carreira mas tem pouco tempo disponível.
+                        </p>
+                    </div>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <div class="audience-content">
+                        <h3>Estudantes</h3>
+                        <p>
+                            Perfeito para quem quer se preparar para exames internacionais ou estudar no exterior.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scarcity Section -->
+    <section class="scarcity">
+        <div class="scarcity-container">
+            <h2 class="scarcity-title">Vagas Limitadas!</h2>
+            <p class="scarcity-text">
+                Turmas com no máximo 6 alunos para garantir atenção personalizada.<br>
+                Próxima turma inicia em 7 dias!
+            </p>
+            <div class="timer-grid">
+                <div class="timer-card">
+                    <div class="timer-value" id="day">07</div>
+                    <div class="timer-label">Dias</div>
+                </div>
+                <div class="timer-card">
+                    <div class="timer-value" id="hour">12</div>
+                    <div class="timer-label">Horas</div>
+                </div>
+                <div class="timer-card">
+                    <div class="timer-value" id="min">45</div>
+                    <div class="timer-label">Minutos</div>
+                </div>
+                <div class="timer-card">
+                    <div class="timer-value" id="seg">30</div>
+                    <div class="timer-label">Segundos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discount Section -->
+    <section class="discount">
+        <div class="discount-container">
+            <div class="discount-card">
+                <h2 class="discount-title">
+                    Oferta Especial de Lançamento
+                </h2>
+                <div class="discount-value">20% OFF</div>
+                <p class="discount-text">
+                    Aproveite o desconto de lançamento!<br>
+                    Ganhe até 20% de desconto na compra de 2 ou mais cursos
+                </p>
+                <button class="cta-btn">
+                    GARANTIR MINHA VAGA
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee">
+        <div class="guarantee-container">
+            <div class="guarantee-content">
+                <div class="guarantee-text">
+                    <h2 class="guarantee-title">
+                        Garantia Incondicional de 30 Dias
+                    </h2>
+                    <p class="guarantee-desc">
+                        Se em até 30 dias você não estiver completamente satisfeito com o curso,
+                        devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.
+                    </p>
+                    <div class="guarantee-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <div>
+                            <h4>Garantia de Satisfação</h4>
+                            <p>30 dias para testar sem risco</p>
+                        </div>
+                    </div>
+                </div>
+                <img 
+                    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+                    alt="Satisfação garantida"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">
+                Perguntas Frequentes
+            </h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="faq-question">Quanto tempo preciso dedicar aos estudos?</h3>
+                            <p class="faq-answer">Recomendamos 30 minutos por dia para melhores resultados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="faq-question">As aulas são ao vivo ou gravadas?</h3>
+                            <p class="faq-answer">Todas as aulas são ao vivo e interativas com o professor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="faq-question">Posso cancelar a qualquer momento?</h3>
+                            <p class="faq-answer">Sim, você pode cancelar sua assinatura quando quiser.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <div class="faq-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="faq-question">Recebo certificado ao final do curso?</h3>
+                            <p class="faq-answer">Sim, você recebe um certificado de conclusão reconhecido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>ForUp</h3>
+                    <p>
+                        Transformando vidas através do ensino de idiomas.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <div class="footer-links">
+                        <a href="#">Sobre nós</a>
+                        <a href="#">Cursos</a>
+                        <a href="#">Contato</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <div class="footer-contact">
+                        <div>forupcursos@gmail.com</div>
+                        <div>(11) 976939246</div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/forup.cursos_/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider">
+                © 2025 ForUp_Cursos. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+    <script src="main.js">
+    </script>
+</body>
+</html>
