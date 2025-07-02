@@ -1,4 +1,3 @@
-// Função para calcular o tempo até o próximo sábado
 let ctaBtn = document.querySelector(".cta-btn");
 let ctaBtn1 = document.querySelector(".course-btn");
 
@@ -7,21 +6,29 @@ let buttons = document.querySelectorAll(".cta-btn, .course-btn");
 let closeModal = document.querySelector(".close-btn");
 
 
-const hamburguer = document.querySelector('.hamburguer');
+// hamburguer menu
+const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-hamburguer.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburguer.classList.toggle('active');
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+
+  const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', String(!isExpanded));
 });
 
-// Fechar o menu quando um link for clicado
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        hamburguer.classList.remove('active');
-    });
+menuToggle.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    navLinks.classList.toggle('active');
+
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+  }
 });
+
+
+
 
 
 

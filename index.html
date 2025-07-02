@@ -10,24 +10,29 @@
 </head>
 <body>
     <!-- Header/Nav -->
-     <header>
-         <nav>
-             <div class="nav-logo">
-                 <span>ForUp</span>
-             </div>
-             <div class="nav-links">
-                 <a href="#">METODOLOGIA</a>
-                 <a href="#">CURSOS</a>
-                 <a href="#">DESCONTOS</a>
-                 <a href="#">AULA EXPERIMENTAL</a>
-             </div>
-             <div class="hamburger-menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-         </nav>
-     </header>
+<header>
+    <nav>
+    <div class="nav-logo">
+        <span>ForUp</span>
+    </div>
+
+    <div class="nav-links" id="nav-links">
+        <a href="#hero">METODOLOGIA</a>
+        <a href="#courses">CURSOS</a>
+        <a href="#discount">DESCONTOS</a>
+        <a href="https://wa.me/11976939246" target="_blank">AULA EXPERIMENTAL</a>
+    </div>
+
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    </nav>
+
+</header>
 
 
      <div class="modal" id="contactModal">
@@ -45,7 +50,7 @@
         </div>
     </div>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-bg"></div>
         
         <div class="hero-container">
@@ -85,7 +90,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features">
+    <section class="features" id="features">
         <div class="features-container">
             <div class="features-grid">
                 <div class="feature-card">
@@ -117,7 +122,7 @@
     </section>
 
     <!-- Efficient Learning Section -->
-    <section class="efficient-learning">
+    <section class="efficient-learning" id="efficient-learning">
         <div class="efficient-learning-container">
             <h2 class="section-title">
                 <span>O jeito mais eficiente</span> de aprender
@@ -129,7 +134,7 @@
     </section>
 
     <!-- Courses Section -->
-    <section class="courses">
+    <section class="courses" id="courses">
         <div class="courses-container">
             <h2 class="courses-title">Nossos Cursos</h2>
             <div class="courses-grid">
@@ -418,7 +423,7 @@
     </section>
 
     <!-- Discount Section -->
-    <section class="discount">
+    <section class="discount" id="discount">
         <div class="discount-container">
             <div class="discount-card">
                 <h2 class="discount-title">
@@ -558,6 +563,7 @@
             </div>
         </div>
     </footer>
+
     <script src="main.js">
     </script>
 </body>
